@@ -1,0 +1,66 @@
+/* 
+  Tiền tố - prefix
+  m-*: margin
+  p-*: padding
+  bg-[color]: background
+*/
+.container {
+    max-width: 980px;
+  }
+  .m-auto {
+    margin: auto;
+  }
+  /* ========== Background ========= */
+  .bg-blue {
+    background: #272f54;
+  }
+  .bg-orange {
+    background: #ca7801;
+  }
+  /* ========== Aligment ========= */
+  .text-center {
+    text-align: center;
+  }
+  /* ========== Margin ========= */
+  .m-0 {
+    margin: 0;
+  }
+  /* ========== Padding ========= */
+  
+  .p-0 {
+    padding: 0;
+  }
+  .p-1 {
+    padding: 4px;
+  }
+  .px-4 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .py-4 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  /* ========== Text color ========= */
+  .text-white {
+    color: #fff;
+  }
+  
+  /* ========== Display ========= */
+  .flex {
+    display: flex;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .items-center {
+    align-items: center;
+  }
+  /* ========== Underline ========= */
+  .no-underline {
+    text-decoration: none;
+  }
+  .list-unstyled {
+    list-style: none;
+  }
+  

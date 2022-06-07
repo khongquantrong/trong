@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="b2.css"/>
+  </head>
+  <body>
+    <div class="m-auto container">
+      <header>
+        <div class=" bg-blue text-center py-4 ">
+          <a href="">
+            <img src="https://picsum.photos/120/40" alt="" />
+          </a>
+        </div>
+        <div class=" bg-orange justify-between items-center flex ">
+          <!-- ul>li*4>a{ menu $} -->
+          <ul class=" flex  list-unstyled px-0 ">
+            <li class=" px-4">
+              <a href="" class=" no-underline text-white  "
+                >menu 1</a
+              >
+            </li>
+            <li class=" no-underline list-unstyled ">
+              <a href="" class="no-underline text-white  "
+                >menu 2</a
+              >
+            </li>
+            <li class=" no-underline list-unstyled px-4 " >
+              <a href="" class="no-underline text-white "
+                >menu 3</a
+              >
+            </li>
+            <li class="no-underline list-unstyled px-4 " >
+                <li  >
+              <a href="" class="no-underline text-white "
+                >menu 4</a
+              >
+            </li>
+          </ul>
+          <!-- form>input+button{ tim kiem} -->
+          <form action="" class="bg-blue" >
+            <input type="text" />
+            <button>tim kiem</button>
+          </form>
+        </div>
+      </header>
+      <div class="banner">
+        <img src="https://picsum.photos/2000/400" alt="" class="max-w-full" />
+      </div>
+      <div class="news">
+        <h2>Tin tuc hoc tap</h2>
+        <div class="grid grid-cols-3 gap-8">
+          <div class="border border-gray hover:border-red hover:bg-blue">
+            <img
+              src="https://picsum.photos/400/300"
+              alt=""
+              class="max-w-full"
+            />
+            <h3><a href="">Tieu de</a></h3>
+            <p>Mo ta</p>
+          </div>
+          <div>
+            <img
+              src="https://picsum.photos/400/300"
+              alt=""
+              class="max-w-full"
+            />
+            <h3><a href="">Tieu de</a></h3>
+            <p>Mo ta</p>
+          </div>
+          <div>
+            <img
+              src="https://picsum.photos/400/300"
+              alt=""
+              class="max-w-full"
+            />
+            <h3><a href="">Tieu de</a></h3>
+            <p>Mo ta</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-4 gap-8">
+          <div>
+            <img src="" alt="" />
+            <h3><a href="">Tieu de</a></h3>
+            <p>Mo ta</p>
+          </div>
+          <div>
+            <img src="" alt="" />
+            <h3><a href="">Tieu de</a></h3>
+            <p>Mo ta</p>
+          </div>
+          <div>
+            <img src="" alt="" />
+            <h3><a href="">Tieu de</a></h3>
+            <p>Mo ta</p>
+          </div>
+          <div>
+            <img src="" alt="" />
+            <h3><a href="">Tieu de</a></h3>
+            <p>Mo ta</p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        copyright by dat
+      </footer>
+    </div>
+    <hr />
+    <h2>Column Float</h2>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .row-float {
+        margin-left: -15px;
+        margin-right: -15px;
+      }
+      .row-float:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .row-float .column {
+        float: left;
+        width: 33.333333%;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .inner {
+        border: 1px solid #000;
+      }
+
+      .row-grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-gap: 30px;
+      }
+    </style>
+    <div class="row-float">
+      <div class="column">
+        <div class="inner">1</div>
+      </div>
+      <div class="column">
+        <div class="inner">2</div>
+      </div>
+      <div class="column">
+        <div class="inner">3</div>
+      </div>
+    </div>
+    <div class="row-grid">
+      <div class="column">
+        <div class="inner">1</div>
+      </div>
+      <div class="column">
+        <div class="inner">2</div>
+      </div>
+      <div class="column">
+        <div class="inner">3</div>
+      </div>
+    </div>
+  </body>
+</html>

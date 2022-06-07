@@ -1,0 +1,134 @@
+/* 
+  Tiền tố - prefix
+  m-*: margin
+  p-*: padding
+  bg-[color]: background
+*/
+:root {
+    --blue: #272f54;
+    --orange: #ca7801;
+  }
+  .container {
+    max-width: 980px;
+  }
+  .m-auto {
+    margin: auto;
+  }
+  /* ========== Background ========= */
+  .bg-blue {
+    background: var(--blue);
+  }
+  .hover\:bg-blue:hover {
+    background: var(--blue);
+  }
+  .bg-orange {
+    background: var(--orange);
+  }
+  /* ========== Aligment ========= */
+  .text-center {
+    text-align: center;
+  }
+  /* ========== Margin ========= */
+  .m-0 {
+    margin: 0;
+  }
+  /* ========== Padding ========= */
+  
+  .p-0 {
+    padding: 0;
+  }
+  .p-1 {
+    padding: 4px;
+  }
+  .p-2 {
+    padding: 8px;
+  }
+  .p-3 {
+    padding: 12px;
+  }
+  .p-4 {
+    padding: 16px;
+  }
+  .px-0 {
+      padding-left:-16px;
+      padding-right:-16px;
+  }
+  .px-1 {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .px-2 {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .px-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .px-4 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .py-4 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  /* ========== Text color ========= */
+  .text-white {
+    color: #fff;
+  }
+  .text-blue {
+    color: var(--blue);
+  }
+  .text-orange {
+    color: var(--orange);
+  }
+  
+  /* ========== Display ========= */
+  .flex {
+    display: flex;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .grid {
+    display: grid;
+  }
+  .grid-cols-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .grid-cols-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .gap-8 {
+    grid-gap: 32px;
+  }
+  /* ========== Underline ========= */
+  .no-underline {
+    text-decoration: none;
+  }
+  .list-unstyled {
+    list-style: none;
+  }
+  
+  /* ========== Border ========= */
+  .border {
+    border: 1px solid;
+  }
+  .border-gray {
+    border-color: gray;
+  }
+  .border-red {
+    border-color: red;
+  }
+  .hover\:border-red:hover {
+    border-color: red;
+  }
+  /* ========== Max width ========= */
+  .max-w-full {
+    max-width: 100%;
+  }
+  

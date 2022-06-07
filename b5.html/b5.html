@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- thay var = const hoặc let
+    không dùng alert(); nữa dùng consolog
+    suwr dung const khi khai bao bien
+    su dung let khi gia tri thay doi 
+    kieu du lieu 
+    kieu du lieu nguye thuy number , string , bolean 
+
+-->
+
+<div id="app" >
+
+
+</div>
+
+    <script>
+        const myName ="huu trong";
+        const myAge = 18;
+        const myChile = 0;
+
+        const myInfor = {
+            name : "trong",
+            age : 18,
+            // married : fale ,
+
+        }
+
+        console.log("myInfor")
+
+        const sinhvien = [
+            { id: 1, code: "PH123", name: "Dat" }, 
+            { id: 2, code: "PH456", name: "Tung" }, 
+            { id: 3, code: "PH789", name: "Kien" }
+    ];
+
+        let result = "";
+        for ( let i=0 ; i < sinhvien.length ; i++ ){
+            const student = sinhvien[i];
+            result += `<div>
+                <h1> ho ten ${student.name} </h1>
+                <p> code ${student.code} </p>
+                </div>`;
+        }
+        console.log("result",result);
+        const app = document.getElementById("app");
+        if(app){
+            app.innerHTML = result;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.box{
+    height:200px;
+    background : rgb(222, 181, 181);
+}
+
+@media (min-width: 768px){
+    .box{
+        background : red;
+    }
+}
+@media ( min-width: 992px){
+    .box{
+        background :green;
+    }
+}
+@media(min-width: 1280px){
+    .box{
+        background: gray;
+    
+        }
+}
